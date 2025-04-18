@@ -1,7 +1,9 @@
 .book-list-container {
-  display: grid;
+ display: flex;
+ flex-wrap: wrap;
+ padding: 30px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
+  gap: 15px;
 }
 
 .book-card {
@@ -18,7 +20,7 @@
 }
 
 .book-img {
-  width: 100%;
+  width: 250px;
   height: 200px;
   object-fit: cover;
 }
@@ -42,4 +44,17 @@
 .book-description {
   color: #666;
   font-style: italic;
+}
+
+.btn {
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+    transition: 0.2s ease-in;
+}
+
+.btn:hover {
+    background-color: darksalmon;
+    color:whitesmoke;
 }

@@ -1,0 +1,23 @@
+
+15-04-25 -->
+Project started 
+
+16-04-25 --> 
+- Library Mng Project Start
+- Navbar Done ✅  --> path rendering Done ✅
+
+17-04-25 work --> Started
+frontend 
+- Home Page done 
+- Browse page Basic done  {Basic complete}
+- add Book page Basic done { basic complete }
+
+18-04-25 -->
+today work done
+for some fetching some problems code error etc. 
+
+19-04-25 -->
+- book details page created
+- add book page form bookdata added in library 
+- search filter implemented 
+- and many more etc work is done today.
