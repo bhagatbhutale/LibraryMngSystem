@@ -8,7 +8,9 @@ Run Project :- npm run dev
  - All Given Tasks is Completed Successfully .
  - Responsive
 
- App Project is Done ✅ in Given Assignment.
+ All Project is Done ✅ 
+ See Outputs 
+ https://github.com/bhagatbhutale/LibraryMngSystem/blob/a9bda30c7fbd9ff522b6a7e8d1e1b0214b423072/Screenshot%20(442).png
 
 
 
