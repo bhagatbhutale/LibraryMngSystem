@@ -2,11 +2,13 @@ import React from 'react'
 import "./Home.css"
 import BookCard from './BookCard';
 
- const sampleBook = {
-   bookimglink: "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f",
-   bookname: "The Silent Library",
-   bookpublishdate: "2021-11-12",
- };
+import { Link } from 'react-router-dom';
+import AllBook from './AllBook';
+import { books } from '../utils/bookmockData';
+
+// React Icons Used 
+import { RiBookShelfLine } from "react-icons/ri";
+import { GiBookshelf } from "react-icons/gi";
 
 const Home = () => {
   return (
@@ -14,22 +16,29 @@ const Home = () => {
       <div className="home">
         <div className="container">
           <div className="welcome-section">
-            <h1>Welcome to Online Library</h1>
+            <h1> <GiBookshelf />  Welcome to Online Library</h1>
           </div>
           <div className="category-section">
-            <h2>Category</h2>
+            <h2>Books Category</h2>
             <div className="category-buttons">
-              <button className="category-link">Fiction</button>
-              <button className="category-link">Non-Fiction</button>
-              <button className="category-link">Three</button>
-              <button className="category-link">Sci-Fi</button>
+              <Link to="/books/Fiction">
+                <button className="category-link">Fiction</button>
+              </Link>
+              <Link to="/books/Non-Fiction">
+                <button className="category-link">Non-Fiction</button>
+              </Link>
+              <Link to="/books/Sci-Fi">
+                <button className="category-link">Sci-Fi</button>
+              </Link>
+              <Link to="/books/etc">
+                <button className="category-link">etc</button>
+              </Link>
             </div>
           </div>
           <div className="popular-section">
             <h3>Popular Book</h3>
-            <div className='bookcart' >
-              <BookCard book={sampleBook} />
-              <BookCard book={sampleBook} />
+            <div className="bookcart">
+              <AllBook books={books.slice(0, 2)} />
             </div>
           </div>
         </div>

@@ -37,8 +37,8 @@ const AddBook = () => {
 
     // push added book in books
     books.push(newBook);
-    alert("Book added successfully!");
-    navigate("/browse")
+    alert("You Want to Sure to Add a Book !");
+    navigate("/books")
     setFormData({
       bookname: "",
       author: "",
@@ -51,70 +51,72 @@ const AddBook = () => {
   };
 
   return (
-    <div className="add-book-form">
-      <h2>Add a New Book</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="bookname"
-          placeholder="Book Name"
-          value={formData.bookname}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="text"
-          name="author"
-          placeholder="Author"
-          value={formData.author}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="text"
-          name="description"
-          placeholder="Description"
-          value={formData.description}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="date"
-          name="bookpublishDate"
-          value={formData.bookpublishDate}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="text"
-          name="rating"
-          placeholder="Rating (e.g. 4/5)"
-          value={formData.rating}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="text"
-          name="bookimglink"
-          placeholder="Image URL (optional)"
-          value={formData.bookimglink}
-          onChange={handleChange}
-        />
-        <select
-          name="bookType"
-          value={formData.bookType}
-          onChange={handleChange}
-          required
-          className="option"
-        >
-          <option value="">Select Book Type</option>
-          <option value="Fiction">Fiction</option>
-          <option value="Non-Fiction">Non-Fiction</option>
-          <option value="Sci-Fi">Sci-Fi</option>
-          <option value="etc">Etc</option>
-        </select>
-        <button type="submit">Add Book</button>
-      </form>
+    <div className="form" >
+      <div className="add-book-form">
+        <h2>Add a New Book</h2>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="bookname"
+            placeholder="Book Name"
+            value={formData.bookname}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="text"
+            name="author"
+            placeholder="Author"
+            value={formData.author}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="text"
+            name="description"
+            placeholder="Description"
+            value={formData.description}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="date"
+            name="bookpublishDate"
+            value={formData.bookpublishDate}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="text"
+            name="rating"
+            placeholder="Rating (e.g. 4/5)"
+            value={formData.rating}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="text"
+            name="bookimglink"
+            placeholder="Image URL (optional)"
+            value={formData.bookimglink}
+            onChange={handleChange}
+          />
+          <select
+            name="bookType"
+            value={formData.bookType}
+            onChange={handleChange}
+            required
+            className="option"
+          >
+            <option value="">Select Book Type</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+            <option value="Sci-Fi">Sci-Fi</option>
+            <option value="etc">Etc</option>
+          </select>
+          <button type="submit">Add Book</button>
+        </form>
+      </div>
     </div>
   );
 };

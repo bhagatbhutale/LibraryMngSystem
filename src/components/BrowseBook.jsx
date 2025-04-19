@@ -17,23 +17,32 @@ const BrowseBook = () => {
         book.author.toLowerCase().includes(lowercasedTerm)
     );
     setFilteredBooks(filtered);
+    setSearchTerm("")
   };
 
   return (
-    <div>
-      <div className="browse-search">
-        <input
-          type="text"
-          placeholder="Search here.."
-          className="input"
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-        />
-        <button className="search-btn" onClick={handleSearch}>
-          Search
-        </button>
+    <div className="books-all" >
+      <div className="search-input">
+        <div className="browse-search">
+          <input
+            type="text"
+            placeholder="Search here.."
+            className="input"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <button className="search-btn" onClick={handleSearch}>
+            Search
+          </button>
+        </div>
+        {filteredBooks.length > 0 ? (
+          <AllBook books={filteredBooks} />
+        ) : (
+          <h4 style={{ color: "red", textAlign: "center", marginTop: "20px" }}>
+            No Book found
+          </h4>
+        )}
       </div>
-      <AllBook books={filteredBooks} />
     </div>
   );
 };

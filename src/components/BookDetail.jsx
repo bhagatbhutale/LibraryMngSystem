@@ -4,6 +4,7 @@ import './BookDetail.css'
 
 const BookDetail = ({books}) => {
     // Book Details
+    // Extract the id 
     const { id } = useParams();
     const navigate = useNavigate();
 

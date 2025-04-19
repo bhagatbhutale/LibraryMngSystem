@@ -1,22 +1,23 @@
 .home {
   background: linear-gradient(to right, #f8f9fa, #e0f7fa);
   padding: 50px;
-  overflow-y: scroll;
+  background-color: #F4F8D3;
  
 }
 
 .container {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 50px auto;
   background-color: #fff;
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow-y: scroll;
 }
 
 .welcome-section h1 {
   font-size: 2.5rem;
-  color: ;
+  color:chocolate ;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -24,7 +25,6 @@
 .category-section h2 {
   font-size: 2.5rem;
   margin-bottom: 15px;
-  color: #00695c;
   display: flex;
   justify-content: center;
 }
@@ -35,8 +35,8 @@
 }
 
 .category-link {
-  background-color: #FEBA17;
-  color: white;
+  background-color: #e8ec9e;
+  color: black;
   border: none;
   padding: 7px 30px;
   border-radius: 6px;
@@ -62,12 +62,23 @@
 
 }
 
-/* .popular-section {
-  display: flex;
-  flex-direction: row;
-} */
-
 .bookcart {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .home {
+    margin-top: 250px;
+  }
+
+  .category-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .category-section h2 {
+    display: flex;
+    align-items: center;
+  }
 }

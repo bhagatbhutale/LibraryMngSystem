@@ -7,12 +7,14 @@ import BrowseBook from "./components/BrowseBook";
 import AddBook from "./components/AddBook";
 
 import { books  } from "./utils/bookmockData"
-import AllBook from "./components/AllBook";
 import BookDetail from "./components/BookDetail";
+
+import CategoryBooks from "./components/CategoryBooks";
+import ErrorPage from "./components/ErrorPage";
+import Footer from "./components/Footer";
 
 
 function App() {
-
 
   return (
     <Router>
@@ -20,11 +22,14 @@ function App() {
       <>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/browse" element={<BrowseBook />} />
+          <Route path="/books" element={<BrowseBook />} />
           <Route path="/add" element={<AddBook />} />
           <Route path="/book/:id" element={<BookDetail books={books} />} />
+          <Route path="/books/:category"  element={ <CategoryBooks /> } />
+          <Route path="*" element={ <ErrorPage /> } />
         </Routes>
       </>
+      <Footer />
     </Router>
   );
 }

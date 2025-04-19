@@ -4,6 +4,7 @@ import "./Allbook.css"
 const AllBook = ({books}) => {
 
  return (
+  // all books show in browse link click 
    <div className="book-list-container">
      {books.map((book, index) => (
        <div key={index} className="book-card">

@@ -1,0 +1,41 @@
+
+.error-page {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.error-content h1 {
+    color: red;
+}
+
+.error-content h3 {
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+}
+
+.error-page button {
+    padding: 10px;
+    font-size: larger;
+    margin: 30px;
+    background-color: #FFA55D;
+    border: none;
+    border-radius: 7px;
+}
+
+@media (max-width: 768px) {
+    .error-page {
+        margin-top: 250px;
+    }
+
+    .error-page button {
+      
+        padding: 10px 40px;
+    }
+
+    .error-content h1 {
+        display: flex;
+        text-align: center;
+    }
+}

@@ -1,7 +1,14 @@
 
-GitHubLink :- 
+GitHubLink :- https://github.com/bhagatbhutale/LibraryMngSystem
 Project folder :- cd librarymanagement 
 Run Project :- npm run dev
+
+ 📁 --> 👉 See the --> seeFile.txt
+ - React Icons Used 
+ - All Given Tasks is Completed Successfully .
+ - Responsive
+
+ App Project is Done ✅ in Given Assignment.
 
 
 

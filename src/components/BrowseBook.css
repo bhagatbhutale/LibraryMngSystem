@@ -1,7 +1,12 @@
+
+.search-input {
+    margin-top: 100px;
+}
+
 .browse-search {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin: 50px auto;
 }
 
 .browse-search .input {
@@ -25,4 +30,10 @@
 .search-btn:hover {
     background-color: lightsalmon;
     color: white;
+}
+
+@media (max-width : 768px) {
+    .books-all {
+        margin-top: 260px;
+    }
 }

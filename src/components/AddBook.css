@@ -1,10 +1,16 @@
+.form {
+  margin: 100px auto;
+  
+}
+
+
 .add-book-form {
   max-width: 500px;
-  margin: 30px auto;
-  padding: 20px;
+  margin: 50px auto;
+  padding: 50px;
   border: 2px solid #ccc;
   border-radius: 15px;
-  background-color: #f8f9fa;
+  background-color: #F4F8D3;
 }
 
 .add-book-form h2 {
@@ -33,7 +39,7 @@
 .add-book-form button {
   padding: 10px;
   font-size: 16px;
-  background-color: #0a58ca;
+  background-color: #FFA955;
   color: white;
   border: none;
   border-radius: 8px;
@@ -41,5 +47,22 @@
 }
 
 .add-book-form button:hover {
-  background-color: #084298;
+  opacity: 0.7;
+}
+
+
+@media (max-width: 480px) {
+  .form {
+    margin: 300px auto;
+  }
+
+  .add-book-form {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+   .form {
+    margin: 300px auto;
+  }
 }
